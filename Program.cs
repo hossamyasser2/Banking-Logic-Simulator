@@ -1,4 +1,4 @@
-using System; 
+using System;
 
 class Program
 {
@@ -14,9 +14,9 @@ class Program
         }
         else
         {
-        Console.WriteLine("Thank you for entering your name.");
+            Console.WriteLine("Thank you for entering your name.");
         }
-        
+
         Console.WriteLine("Enter Initial Deposit Amount:"); // Asks the user to input the deposit amount.
         string balanceInput = Console.ReadLine();
         if (string.IsNullOrWhiteSpace(balanceInput))
@@ -28,19 +28,19 @@ class Program
         Console.WriteLine("Thank you for entering a deposit amount.");
         double interestRate = 0.05; // Interest rate
         double balanceInTenYears = balance * Math.Pow(1 + interestRate, 10); // Calculates balance in 10 years by taking original balance 
-                                                                            // and multiplying it by the interest rate + 1 to the power of 10
-        string accountID = fullName.Substring(0,3).ToUpper() + "-" + balance.ToString().Length; // Stores the users first 3 letters of their name and makes it UPPERCASE and 
-                                                                                               // adds a - then converst the balance into a string and calculates the number of characters the balance has
+                                                                             // and multiplying it by the interest rate + 1 to the power of 10
+        string accountID = fullName.Substring(0, 3).ToUpper() + "-" + balance.ToString().Length; // Stores the users first 3 letters of their name and makes it UPPERCASE and 
+                                                                                                 // adds a - then converst the balance into a string and calculates the number of characters the balance has
         Random random = new Random(); // Random number generator
         int generatedOTP = random.Next(1000, 9999); // From 1000-9999 Random number
 
         Console.WriteLine("SECURITY: A temporary PIN has been generated: " + generatedOTP); // Tells the user the generated PIN
         Console.WriteLine("Please confirm PIN to view projected balance."); // Asks the user to input the PIN
         int userEntry = Convert.ToInt32(Console.ReadLine()); // Converts the users input into INT format
-        if(userEntry == generatedOTP) // If statement to see if the user typed it correctly.
+        if (userEntry == generatedOTP) // If statement to see if the user typed it correctly.
         {
             Console.WriteLine("VERIFIED.");
-            Console.WriteLine("Account Holder: "+ fullName.ToUpper());
+            Console.WriteLine("Account Holder: " + fullName.ToUpper());
             Console.WriteLine("Account ID: " + accountID);
             Console.WriteLine("Current Balance: " + balance);
             Console.WriteLine("Balance in 10 years: " + balanceInTenYears);
@@ -49,7 +49,7 @@ class Program
         {
             Console.WriteLine("ACCESS DENIED: Unauthorized PIN entry.");
         }
-        
+
         Console.WriteLine("Press any key to logout."); // Ending the code
         Console.ReadKey();
     }
