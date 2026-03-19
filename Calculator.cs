@@ -36,34 +36,34 @@ class Program
                 case "+":
                     Console.WriteLine("You have chosen addition.");
                     answer = firstNumber + secondNumber;
-                    Console.WriteLine($"The answer is {answer}.");
+                    Console.WriteLine($"Answer: {firstNumber} + {secondNumber} = {answer}.");
                     break;
                 case "-":
                     Console.WriteLine("You have chosen subtraction.");
                     answer = firstNumber - secondNumber;
-                    Console.WriteLine($"The answer is {answer}.");
+                    Console.WriteLine($"Answer: {firstNumber} - {secondNumber} = {answer}.");
                     break;
                 case "/":
                     Console.WriteLine("You have chosen division.");;
                     answer = firstNumber / secondNumber;
                     remainder = firstNumber % secondNumber;
-                    Console.WriteLine($"The answer is {answer}.");
+                    Console.WriteLine($"Answer: {firstNumber} / {secondNumber} = {answer}.");
                     Console.WriteLine($"With a remainder of {remainder}");
                     break;
                 case "*":
                     Console.WriteLine("You have chosen multiplication.");
                     answer = firstNumber * secondNumber;
-                    Console.WriteLine($"The answer is {answer}.");
+                    Console.WriteLine($"Answer: {firstNumber} * {secondNumber} = {answer}.");
                     break;
                 case "%":
                     Console.WriteLine("You have chosen power of.");
                     answer = Math.Pow(firstNumber, secondNumber);
-                    Console.WriteLine($"The answer is {answer}.");
+                    Console.WriteLine($"Answer: {firstNumber} to the power of {secondNumber} = {answer}.");
                     break;
                 case "#":
                     Console.WriteLine("You have chosen square root.");
                     answer = Math.Sqrt(firstNumber);
-                    Console.WriteLine($"The answer is {answer}.");
+                    Console.WriteLine($"The square root of {firstNumber} is {answer}.");
                     break;
                 default:
                     Console.WriteLine("This is not a valid operation.");
