@@ -69,7 +69,7 @@ class Program
                     break;
             }
             Console.WriteLine("Would you like to use the calculator again? (Y = Yes, Anything else = No)");
-        } while (Console.ReadLine() == "Y");
+        } while (Console.ReadLine().ToUpper() == "Y");
         Console.WriteLine("Goodbye.");
     }
 }
