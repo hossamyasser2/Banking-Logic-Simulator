@@ -5,9 +5,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        string name = "Hossam";
-        int age = 5;
-        string month = "April";
+        string name = "name";
+        int age = 20;
+        string month = "month";
 
         singHappyBirthday(name,age,month);
         singHappyBirthday(name,age,month);

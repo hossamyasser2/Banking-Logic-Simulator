@@ -12,14 +12,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        string Party = AnnounceParty("Beach", 5, "Hossam", "Jackson", "Ibrahim", "Philip");
+        string Party = AnnounceParty("Beach", 5, "Shaq", "Jackson", "Jake", "Philip");
         Console.WriteLine(Party);
 
     }
     static string AnnounceParty(string location, int hours, params string[] guests)
     {
-       string guestList = "";
-       foreach(string guest in guests)
+        string guestList = "";
+        foreach (string guest in guests)
         {
             guestList += guest + ",";
         }
